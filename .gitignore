@@ -1,0 +1,7 @@
+UDMFConvert.ncb
+UDMFConvert.suo
+*.vcproj.*
+debug
+release
+*/Debug
+*/Release

@@ -1,0 +1,5 @@
+* Move ZDooM-specific code to seperate files instead of using #ifdefs in hexen-related files.
+
+* Change makefile to compile source code into individual object files, instead of recompiling for each executable.
+
+* Add support for strife.

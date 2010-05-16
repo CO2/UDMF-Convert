@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C++ Express 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DoomConvert", "DoomConvert\DoomConvert.vcproj", "{12ECEE63-3B58-47C1-AC7C-1AB917CCA667}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HexenConvert", "HexenConvert\HexenConvert.vcproj", "{4C0C74F8-56F0-4675-9870-5D8C3876D89D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZDoomConvert", "ZDooMConvert\ZDoomConvert.vcproj", "{14B9CE40-7DF7-44F2-AFF9-3F1B41C34982}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12ECEE63-3B58-47C1-AC7C-1AB917CCA667}.Debug|Win32.ActiveCfg = Debug|Win32
+		{12ECEE63-3B58-47C1-AC7C-1AB917CCA667}.Debug|Win32.Build.0 = Debug|Win32
+		{12ECEE63-3B58-47C1-AC7C-1AB917CCA667}.Release|Win32.ActiveCfg = Release|Win32
+		{12ECEE63-3B58-47C1-AC7C-1AB917CCA667}.Release|Win32.Build.0 = Release|Win32
+		{4C0C74F8-56F0-4675-9870-5D8C3876D89D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4C0C74F8-56F0-4675-9870-5D8C3876D89D}.Debug|Win32.Build.0 = Debug|Win32
+		{4C0C74F8-56F0-4675-9870-5D8C3876D89D}.Release|Win32.ActiveCfg = Release|Win32
+		{4C0C74F8-56F0-4675-9870-5D8C3876D89D}.Release|Win32.Build.0 = Release|Win32
+		{14B9CE40-7DF7-44F2-AFF9-3F1B41C34982}.Debug|Win32.ActiveCfg = Debug|Win32
+		{14B9CE40-7DF7-44F2-AFF9-3F1B41C34982}.Debug|Win32.Build.0 = Debug|Win32
+		{14B9CE40-7DF7-44F2-AFF9-3F1B41C34982}.Release|Win32.ActiveCfg = Release|Win32
+		{14B9CE40-7DF7-44F2-AFF9-3F1B41C34982}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
