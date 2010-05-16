@@ -16,8 +16,8 @@ You should have received a copy of the GNU General Public
 License along with this program. If not, see
 <http://www.gnu.org/licenses/>. */
 
-#ifndef hexen_mapdata_h
-#define hexen_mapdata_h
+#ifndef zdoom_mapdata_h
+#define zdoom_mapdata_h
 
 #include <iostream>
 #include "sharedmap.h"

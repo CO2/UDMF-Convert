@@ -19,6 +19,9 @@ License along with this program. If not, see
 #ifndef convert_map_h
 #define convert_map_h
 
+#include "doommap.h"
+#include "hexenmap.h"
+#include "zdoommap.h"
 #include "sharedmap.h"
 #include "udmf.h"
 
@@ -28,25 +31,16 @@ udmf::block convert(shared::vertex,double xf = 1,double yf = 1);
 udmf::block convert(shared::sector,double zf = 1);
 
 //Hexen -> UDMF
-#ifdef HEXEN
-#include "hexenmap.h"
 udmf::block convert(hexen::linedef);
 udmf::block convert(hexen::thing,double xf = 1,double yf = 1,double zf = 1);
-#endif
 
 //Doom -> UDMF
-#ifdef DOOM
-#include "doommap.h"
 udmf::block convert(doom::linedef);
 udmf::block convert(doom::thing,double xf = 1,double yf = 1,double zf = 1);
-#endif
 
 //ZDoom -> UDMF
-#ifdef ZDOOM
-#include "zdoommap.h"
 udmf::block convert(zdoom::linedef);
 udmf::block convert(zdoom::thing,double xf = 1,double yf = 1,double zf = 1);
-#endif
 
 //Old UDMF conversion
 /*//Hexen -> UDMF
