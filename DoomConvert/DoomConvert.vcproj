@@ -207,6 +207,10 @@
 					>
 				</File>
 				<File
+					RelativePath="..\hexenmap.h"
+					>
+				</File>
+				<File
 					RelativePath="..\mapread.h"
 					>
 				</File>
@@ -216,6 +220,10 @@
 				</File>
 				<File
 					RelativePath="..\udmf.h"
+					>
+				</File>
+				<File
+					RelativePath="..\zdoommap.h"
 					>
 				</File>
 			</Filter>

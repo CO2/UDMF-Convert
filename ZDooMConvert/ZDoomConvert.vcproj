@@ -201,6 +201,14 @@
 				Name="Map Formats"
 				>
 				<File
+					RelativePath="..\doommap.h"
+					>
+				</File>
+				<File
+					RelativePath="..\hexenmap.h"
+					>
+				</File>
+				<File
 					RelativePath="..\mapread.h"
 					>
 				</File>

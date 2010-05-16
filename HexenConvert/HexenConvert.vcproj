@@ -201,6 +201,10 @@
 				Name="Map Formats"
 				>
 				<File
+					RelativePath="..\doommap.h"
+					>
+				</File>
+				<File
 					RelativePath="..\hexenmap.h"
 					>
 				</File>
@@ -214,6 +218,10 @@
 				</File>
 				<File
 					RelativePath="..\udmf.h"
+					>
+				</File>
+				<File
+					RelativePath="..\zdoommap.h"
 					>
 				</File>
 			</Filter>
