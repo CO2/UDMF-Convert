@@ -159,10 +159,6 @@
 				Name="Map Formats"
 				>
 				<File
-					RelativePath="..\doommap.cpp"
-					>
-				</File>
-				<File
 					RelativePath="..\hexenmap.cpp"
 					>
 				</File>
@@ -178,10 +174,6 @@
 			<Filter
 				Name="Conversion"
 				>
-				<File
-					RelativePath="..\convertdoom.cpp"
-					>
-				</File>
 				<File
 					RelativePath="..\converthexen.cpp"
 					>
@@ -208,10 +200,6 @@
 			<Filter
 				Name="Map Formats"
 				>
-				<File
-					RelativePath="..\doommap.h"
-					>
-				</File>
 				<File
 					RelativePath="..\hexenmap.h"
 					>

@@ -159,14 +159,6 @@
 				Name="Map Formats"
 				>
 				<File
-					RelativePath="..\doommap.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\hexenmap.cpp"
-					>
-				</File>
-				<File
 					RelativePath="..\sharedmap.cpp"
 					>
 				</File>
@@ -174,20 +166,20 @@
 					RelativePath="..\udmf.cpp"
 					>
 				</File>
+				<File
+					RelativePath="..\zdoommap.cpp"
+					>
+				</File>
 			</Filter>
 			<Filter
 				Name="Conversion"
 				>
 				<File
-					RelativePath="..\convertdoom.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\converthexen.cpp"
-					>
-				</File>
-				<File
 					RelativePath="..\convertshared.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\convertzdoom.cpp"
 					>
 				</File>
 			</Filter>
@@ -209,14 +201,6 @@
 				Name="Map Formats"
 				>
 				<File
-					RelativePath="..\doommap.h"
-					>
-				</File>
-				<File
-					RelativePath="..\hexenmap.h"
-					>
-				</File>
-				<File
 					RelativePath="..\mapread.h"
 					>
 				</File>
@@ -226,6 +210,10 @@
 				</File>
 				<File
 					RelativePath="..\udmf.h"
+					>
+				</File>
+				<File
+					RelativePath="..\zdoommap.h"
 					>
 				</File>
 			</Filter>

@@ -165,10 +165,6 @@
 					>
 				</File>
 				<File
-					RelativePath="..\hexenmap.cpp"
-					>
-				</File>
-				<File
 					RelativePath="..\sharedmap.cpp"
 					>
 				</File>
@@ -182,10 +178,6 @@
 				>
 				<File
 					RelativePath="..\convertdoom.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\converthexen.cpp"
 					>
 				</File>
 				<File
@@ -212,10 +204,6 @@
 				>
 				<File
 					RelativePath="..\doommap.h"
-					>
-				</File>
-				<File
-					RelativePath="..\hexenmap.h"
 					>
 				</File>
 				<File

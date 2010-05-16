@@ -21,25 +21,22 @@ License along with this program. If not, see
 #include <fstream>
 #include <stdlib.h>
 #include "convert.h"
-#include "sharedmap.h"
-#include "doommap.h"
-#include "hexenmap.h"
-#include "udmf.h"
 #include "exceptions.h"
 
 #ifdef HEXEN
+#include "hexenmap.h"
 #define format hexen
 #define format_namespace "Hexen"
 #elif defined(ZDOOM)
-#define format hexen
+#include "zdoommap.h"
+#define format zdoom
 #define format_namespace "ZDoom"
 #elif defined(DOOM)
+#include "doommap.h"
 #define format doom
 #define format_namespace "Doom"
 #elif defined(STRIFE)
 #error Strife is not supported (yet)
-#define format what
-#define format_namespace "Strife"
 #else
 #error No input format defined
 #endif
