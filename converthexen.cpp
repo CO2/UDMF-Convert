@@ -76,19 +76,6 @@ udmf::block convert(hexen::linedef l)
 	ul["sidefront"].setint((unsigned short)l.right);
 	if (l.left != -1)
 		ul["sideback"].setint((unsigned short)l.left);
-#ifdef ZDOOM
-	if (l.flags & hexen::LDF_MONSTERUSE)
-		ul["monsteractivate"].setbool(1);
-	if (l.flags & hexen::LDF_BLOCKPLAYERS)
-		ul["blockplayers"].setbool(1);
-	if (l.flags & hexen::LDF_BLOCKALL)
-		ul["blockeverything"].setbool(1);
-	if ((l.flags & 0x1C00) == hexen::LDA_PROJECTILEANY)
-	{
-		ul["impact"].setbool(1);
-		ul["missilecross"].setbool(1);
-	}
-#endif
 	if (ul["special"] == 121)
 	{
 		ul["id"] = ul["arg0"];
@@ -98,69 +85,6 @@ udmf::block convert(hexen::linedef l)
 		ul["arg2"].nullify();
 		ul["arg3"].nullify();
 		ul["arg4"].nullify();
-#ifdef ZDOOM
-		ul["id"].setint(l.arg[0] | (l.arg[4] << 8));
-		if (l.arg[1] & hexen::LDFE_ZONEBOUNDARY)
-			ul["zoneboundary"].setbool(1);
-		if (l.arg[1] & hexen::LDFE_RAILING)
-			ul["jumpover"].setbool(1);
-		if (l.arg[1] & hexen::LDFE_BLOCKFLOATERS)
-			ul["blockfloaters"].setbool(1);
-		if (l.arg[1] & hexen::LDFE_CLIPMIDTEX)
-			ul["clipmidtex"].setbool(1);
-		if (l.arg[1] & hexen::LDFE_WRAPMIDTEX)
-			ul["wrapmidtex"].setbool(1);
-		if (l.arg[1] & hexen::LDFE_3DMIDTEX)
-			ul["midtex3d"].setbool(1);
-		if (l.arg[1] & hexen::LDFE_CHECKRANGE)
-			ul["checkswitchrange"].setbool(1);
-		if (l.arg[1] & hexen::LDFE_FIRSTSIDE)
-			ul["firstsideonly"].setbool(1);
-	}
-	if (ul["special"] == 208)
-	{
-		ul["id"] = l.arg[0];
-		if (l.arg[3] & hexen::LDFE_ZONEBOUNDARY)
-			ul["zoneboundary"].setbool(1);
-		if (l.arg[3] & hexen::LDFE_RAILING)
-			ul["jumpover"].setbool(1);
-		if (l.arg[3] & hexen::LDFE_BLOCKFLOATERS)
-			ul["blockfloaters"].setbool(1);
-		if (l.arg[3] & hexen::LDFE_CLIPMIDTEX)
-			ul["clipmidtex"].setbool(1);
-		if (l.arg[3] & hexen::LDFE_WRAPMIDTEX)
-			ul["wrapmidtex"].setbool(1);
-		if (l.arg[3] & hexen::LDFE_3DMIDTEX)
-			ul["midtex3d"].setbool(1);
-		if (l.arg[3] & hexen::LDFE_CHECKRANGE)
-			ul["checkswitchrange"].setbool(1);
-		if (l.arg[3] & hexen::LDFE_FIRSTSIDE)
-			ul["firstsideonly"].setbool(1);
-	}
-	if (ul["special"] == 1)
-	{
-		ul["id"] = ul["arg3"];
-		ul["arg3"].nullify();
-	}
-	if (ul["special"] == 5)
-	{
-		ul["id"] = ul["arg4"];
-		ul["arg4"].nullify();
-	}
-	if (ul["special"] == 215)
-	{
-		ul["id"] = ul["arg0"];
-		ul["arg0"].nullify();
-	}
-	if (ul["special"] == 222)
-	{
-		ul["id"] = ul["arg0"];
-	}
-	if (ul["special"] == 181)
-	{
-	    ul["id"] = ul["arg2"];
-	    ul["arg2"].nullify();
-#endif
 	}
 	return ul;
 }
@@ -205,16 +129,6 @@ udmf::block convert(hexen::thing t,double xfactor,double yfactor,double zfactor)
 		ut["class2"].setbool(1);
 	if (t.flags & hexen::TF_MAGE)
 		ut["class3"].setbool(1);
-#ifdef ZDOOM
-	if (t.flags & hexen::TF_TRANSLUCENT)
-		ut["translucent"].setbool(1);
-	if (t.flags & hexen::TF_INVISIBLE)
-		ut["invisible"].setbool(1);
-	if (t.flags & hexen::TF_FRIENDLY)
-		ut["stifeally"].setbool(1);
-	if (t.flags & hexen::TF_STANDSTILL)
-		ut["standing"].setbool(1);
-#endif
 	if (t.special != 0)
 		ut["special"].setint(t.special);
 	if (t.arg[0] != 0)

@@ -37,13 +37,6 @@ namespace hexen
 		TF_SINGLE = 0x100,	//Appears in singleplayer games
 		TF_COOP = 0x200,	//Appears in cooperative games
 		TF_DMATCH = 0x400	//Appears in deathmatch games
-#ifdef ZDOOM
-		,
-		TF_TRANSLUCENT = 0x800,
-		TF_INVISIBLE = 0x1000,
-		TF_FRIENDLY = 0x2000,
-		TF_STANDSTILL = 0x4000
-#endif
 	};
 
 	enum linedefflags
@@ -59,26 +52,7 @@ namespace hexen
 		LDF_VISIBLE = 0x100,
 		LDF_REPEATABLE = 0x200,
 		LDF_MONSTERUSE = 0x2000
-#ifdef ZDOOM
-		,
-		LDF_BLOCKPLAYERS = 0x4000,
-		LDF_BLOCKALL = 0x8000
-#endif
 	};
-
-#ifdef ZDOOM
-	enum linedefflags_extra
-	{
-		LDFE_ZONEBOUNDARY = 0x1,
-		LDFE_RAILING = 0x2,
-		LDFE_BLOCKFLOATERS = 0x4,
-		LDFE_CLIPMIDTEX = 0x8,
-		LDFE_WRAPMIDTEX = 0x10,
-		LDFE_3DMIDTEX = 0x20,
-		LDFE_CHECKRANGE = 0x40,
-		LDFE_FIRSTSIDE = 0x80
-	};
-#endif
 
 	enum linedefactivation
 	{
@@ -89,10 +63,6 @@ namespace hexen
 		LDA_PLAYERBUMP = 0x1000,
 		LDA_PROJECTILECROSS = 0x1400,
 		LDA_PASSTHRUUSE = 0x1800
-#ifdef ZDOOM
-		,
-		LDA_PROJECTILEANY = 0x1C00	//Seems to exist
-#endif
 	};
 
 	struct thing
