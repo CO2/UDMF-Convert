@@ -159,12 +159,20 @@
 					RelativePath="..\convertshared.cpp"
 					>
 				</File>
+				<File
+					RelativePath="..\convertstrife.cpp"
+					>
+				</File>
 			</Filter>
 			<Filter
 				Name="Map Formats"
 				>
 				<File
 					RelativePath="..\sharedmap.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\strifemap.cpp"
 					>
 				</File>
 				<File
@@ -203,6 +211,10 @@
 				</File>
 				<File
 					RelativePath="..\sharedmap.h"
+					>
+				</File>
+				<File
+					RelativePath="..\strifemap.h"
 					>
 				</File>
 				<File
