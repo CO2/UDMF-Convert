@@ -19,6 +19,8 @@ License along with this program. If not, see
 #ifndef convert_map_h
 #define convert_map_h
 
+#include <cstring>
+
 #include "doommap.h"
 #include "hexenmap.h"
 #include "zdoommap.h"
