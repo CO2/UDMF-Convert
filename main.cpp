@@ -24,15 +24,12 @@ License along with this program. If not, see
 #include "exceptions.h"
 
 #ifdef HEXEN
-#include "hexenmap.h"
 #define format hexen
 #define format_namespace "Hexen"
 #elif defined(ZDOOM)
-#include "zdoommap.h"
 #define format zdoom
 #define format_namespace "ZDoom"
 #elif defined(DOOM)
-#include "doommap.h"
 #define format doom
 #define format_namespace "Doom"
 #elif defined(STRIFE)

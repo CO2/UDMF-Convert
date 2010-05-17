@@ -44,18 +44,4 @@ udmf::block convert(doom::thing,double xf = 1,double yf = 1,double zf = 1);
 udmf::block convert(zdoom::linedef);
 udmf::block convert(zdoom::thing,double xf = 1,double yf = 1,double zf = 1);
 
-//Old UDMF conversion
-/*//Hexen -> UDMF
-udmf::linedef chglinedef(hexen::linedef);
-udmf::thing chgthing(hexen::thing);
-
-//Doom -> UDMF
-udmf::linedef chglinedef(doom::linedef);
-udmf::thing chgthing(doom::thing);
-
-//Shared -> UDMF
-udmf::sidedef chgsidedef(shared::sidedef);
-udmf::vertex chgvertex(shared::vertex);
-udmf::sector chgsector(shared::sector);*/
-
 #endif
