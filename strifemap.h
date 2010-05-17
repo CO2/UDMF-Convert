@@ -29,11 +29,13 @@ namespace strife
 		TF_EASY = 0x1,
 		TF_MEDIUM = 0x2,
 		TF_HARD = 0x4,
-		TF_AMBUSH = 0x8,
+		TF_STANDSTILL = 0x8,
 		TF_MULTI = 0x10,
-		TF_NODM = 0x20,
-		TF_NOCOOP = 0x40,
-		TF_FRIEND = 0x80
+		TF_AMBUSH = 0x20,
+		TF_UNKNOWN = 0x40,		//???
+		TF_FRIEND = 0x80,
+		TF_75TRANS = 0x100,		//75% opaque
+		TF_INVISIBLE = 0x200,	//Thing is invisible
 	};
 
 	enum linedefflags
@@ -47,7 +49,10 @@ namespace strife
 		LDF_BLOCKSOUND = 0x40,
 		LDF_NOAUTOMAP = 0x80,
 		LDF_VISIBLE = 0x100,
-		LDF_PASSUSE = 0x200
+		LDF_RAILING = 0x200,		//Only block the lower 32 mapunits
+		LDF_BLOCKFLOAT = 0x400,		//Block floaters?
+		LDF_25TRANS = 0x800,		//25% opaque
+		LDF_75TRANS = 0x1000		//75% opaque
 	};
 
 	struct thing
