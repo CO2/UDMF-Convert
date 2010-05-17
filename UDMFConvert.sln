@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HexenConvert", "HexenConver
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZDoomConvert", "ZDooMConvert\ZDoomConvert.vcproj", "{14B9CE40-7DF7-44F2-AFF9-3F1B41C34982}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StrifeConvert", "StrifeConvert\StrifeConvert.vcproj", "{ABAED3BC-472A-4847-B95B-84604AF87D60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -25,6 +27,10 @@ Global
 		{14B9CE40-7DF7-44F2-AFF9-3F1B41C34982}.Debug|Win32.Build.0 = Debug|Win32
 		{14B9CE40-7DF7-44F2-AFF9-3F1B41C34982}.Release|Win32.ActiveCfg = Release|Win32
 		{14B9CE40-7DF7-44F2-AFF9-3F1B41C34982}.Release|Win32.Build.0 = Release|Win32
+		{ABAED3BC-472A-4847-B95B-84604AF87D60}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ABAED3BC-472A-4847-B95B-84604AF87D60}.Debug|Win32.Build.0 = Debug|Win32
+		{ABAED3BC-472A-4847-B95B-84604AF87D60}.Release|Win32.ActiveCfg = Release|Win32
+		{ABAED3BC-472A-4847-B95B-84604AF87D60}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
