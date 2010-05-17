@@ -1,5 +1,3 @@
-* Change makefile to compile source code into individual object files, instead of recompiling for each executable.
-
 * Add support for strife.
 
 * Create a README file

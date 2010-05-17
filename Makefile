@@ -1,14 +1,41 @@
 CC=g++
 CFLAGS=-Wall
-FILES=./*.cpp
+SHARED=main.cpp sharedmap.o convertshared.o udmf.o
 
 all: doom hexen zdoom
 
-doom:
-	$(CC) $(CFLAGS) $(FILES) -DDOOM -o doomconvert
+doom: doommap.o convertdoom.o sharedmap.o convertshared.o udmf.o
+	$(CC) $(CFLAGS) $(SHARED) doommap.o convertdoom.o -DDOOM -o doomconvert
 
-hexen:
-	$(CC) $(CFLAGS) $(FILES) -DHEXEN -o hexenconvert
+hexen: hexenmap.o converthexen.o sharedmap.o convertshared.o udmf.o
+	$(CC) $(CFLAGS) $(SHARED) hexenmap.o converthexen.o -DHEXEN -o hexenconvert
 
-zdoom:
-	$(CC) $(CFLAGS) $(FILES) -DZDOOM -o zdoomconvert
+zdoom: zdoommap.o convertzdoom.o sharedmap.o convertshared.o udmf.o
+	$(CC) $(CFLAGS) $(SHARED) zdoommap.o convertzdoom.o -DZDOOM -o zdoomconvert
+
+udmf.o:
+	$(CC) $(CFLAGS) -c udmf.cpp -o udmf.o
+
+sharedmap.o:
+	$(CC) $(CFLAGS) -c sharedmap.cpp -o sharedmap.o
+
+convertshared.o:
+	$(CC) $(CFLAGS) -c convertshared.cpp -o convertshared.o
+
+doommap.o:
+	$(CC) $(CFLAGS) -c doommap.cpp -o doommap.o
+
+convertdoom.o:
+	$(CC) $(CFLAGS) -c convertdoom.cpp -o convertdoom.o
+
+hexenmap.o:
+	$(CC) $(CFLAGS) -c hexenmap.cpp -o hexenmap.o
+
+converthexen.o:
+	$(CC) $(CFLAGS) -c converthexen.cpp -o converthexen.o
+
+zdoommap.o:
+	$(CC) $(CFLAGS) -c zdoommap.cpp -o zdoommap.o
+
+convertzdoom.o:
+	$(CC) $(CFLAGS) -c convertzdoom.cpp -o convertzdoom.o
