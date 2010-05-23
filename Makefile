@@ -2,7 +2,7 @@ CC=g++
 CFLAGS=-Wall
 SHARED=main.cpp sharedmap.o convertshared.o udmf.o
 
-all: doom hexen zdoom
+all: doom hexen zdoom strife
 
 doom: doommap.o convertdoom.o sharedmap.o convertshared.o udmf.o
 	$(CC) $(CFLAGS) $(SHARED) doommap.o convertdoom.o -DDOOM -o doomconvert
@@ -12,6 +12,9 @@ hexen: hexenmap.o converthexen.o sharedmap.o convertshared.o udmf.o
 
 zdoom: zdoommap.o convertzdoom.o sharedmap.o convertshared.o udmf.o
 	$(CC) $(CFLAGS) $(SHARED) zdoommap.o convertzdoom.o -DZDOOM -o zdoomconvert
+
+strife: strifemap.o convertstrife.o sharedmap.o convertshared.o udmf.o
+	$(CC) $(CFLAGS) $(SHARED) strifemap.o convertstrife.o -DSTRIFE -o strifeconvert
 
 udmf.o:
 	$(CC) $(CFLAGS) -c udmf.cpp -o udmf.o
@@ -39,3 +42,9 @@ zdoommap.o:
 
 convertzdoom.o:
 	$(CC) $(CFLAGS) -c convertzdoom.cpp -o convertzdoom.o
+
+strifemap.o:
+	$(CC) $(CFLAGS) -c strifemap.cpp -o strifemap.o
+
+convertstrife.o:
+	$(CC) $(CFLAGS) -c convertstrife.cpp -o convertstrife.o
