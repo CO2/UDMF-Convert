@@ -36,7 +36,8 @@ License along with this program. If not, see
 #define format doom
 #define format_namespace "Doom"
 #elif defined(STRIFE)
-#error Strife is not supported (yet)
+#define format strife
+#define format_namespace "Strife"
 #else
 #error No input format defined
 #endif
