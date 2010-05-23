@@ -48,8 +48,12 @@ udmf::block convert(strife::linedef l)
 		ul["dontdraw"].setbool(1);
 	if (l.flags & strife::LDF_VISIBLE)
 		ul["mapped"].setbool(1);
-	if (l.flags & strife::LDF_PASSUSE)
-		ul["passuse"].setbool(1);
+	if (l.flags & strife::LDF_RAILING)
+		ul["jumpover"].setbool(1);
+	if (l.flags & strife::LDF_BLOCKFLOAT)
+		ul["blockfloaters"].setbool(1);
+	if (l.flags & strife::LDF_75TRANS)
+		ul["translucent"].setbool(1);
 	if (l.special != 0)
 		ul["special"].setint((unsigned short)l.special);
 	ul["sidefront"] = (unsigned short)l.right;
