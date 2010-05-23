@@ -86,11 +86,13 @@ udmf::block convert(strife::thing t,double xfactor,double yfactor,double zfactor
 		ut["ambush"].setbool(1);
 	if (!(t.flags & strife::TF_MULTI))
 		ut["single"].setbool(1);
-	if (!(t.flags & strife::TF_NODM))
-		ut["dm"].setbool(1);
-	if (!(t.flags & strife::TF_NOCOOP))
-		ut["coop"].setbool(1);
+	if (t.flags & strife::TF_STANDSTILL)
+		ut["standing"].setbool(1);
+	if (t.flags & strife::TF_75TRANS)
+		ut["translucent"].setbool(1);
+	if (t.flags & strife::TF_INVISIBLE)
+		ut["invisible"].setbool(1);
 	if (t.flags & strife::TF_FRIEND)
-		ut["friend"].setbool(1);
+		ut["strifeally"].setbool(1);
 	return ut;
 }
