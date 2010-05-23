@@ -32,8 +32,8 @@ namespace strife
 		TF_STANDSTILL = 0x8,
 		TF_MULTI = 0x10,
 		TF_AMBUSH = 0x20,
-		TF_UNKNOWN = 0x40,		//???
-		TF_FRIEND = 0x80,
+		TF_FRIEND = 0x40,
+		TF_UNKNOWN = 0x80,		//???
 		TF_75TRANS = 0x100,		//75% opaque
 		TF_INVISIBLE = 0x200,	//Thing is invisible
 	};
