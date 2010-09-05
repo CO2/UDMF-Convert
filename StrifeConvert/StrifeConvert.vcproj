@@ -2,9 +2,8 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="8.00"
-	Name="ZDoomConvert"
-	ProjectGUID="{14B9CE40-7DF7-44F2-AFF9-3F1B41C34982}"
-	RootNamespace="ZDoomConvert"
+	Name="StrifeConvert"
+	ProjectGUID="{ABAED3BC-472A-4847-B95B-84604AF87D60}"
 	>
 	<Platforms>
 		<Platform
@@ -37,8 +36,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				PreprocessorDefinitions="ZDOOM"
-				RuntimeLibrary="0"
+				PreprocessorDefinitions="STRIFE"
 				DisableSpecificWarnings="4996"
 			/>
 			<Tool
@@ -52,7 +50,6 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				LinkIncremental="1"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -102,7 +99,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				PreprocessorDefinitions="ZDOOM"
+				PreprocessorDefinitions="STRIFE"
 				DisableSpecificWarnings="4996"
 			/>
 			<Tool
@@ -156,22 +153,6 @@
 				>
 			</File>
 			<Filter
-				Name="Map Formats"
-				>
-				<File
-					RelativePath="..\sharedmap.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\udmf.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\zdoommap.cpp"
-					>
-				</File>
-			</Filter>
-			<Filter
 				Name="Conversion"
 				>
 				<File
@@ -179,7 +160,23 @@
 					>
 				</File>
 				<File
-					RelativePath="..\convertzdoom.cpp"
+					RelativePath="..\convertstrife.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Map Formats"
+				>
+				<File
+					RelativePath="..\sharedmap.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\strifemap.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\udmf.cpp"
 					>
 				</File>
 			</Filter>

@@ -219,6 +219,10 @@
 					>
 				</File>
 				<File
+					RelativePath="..\strifemap.h"
+					>
+				</File>
+				<File
 					RelativePath="..\udmf.h"
 					>
 				</File>

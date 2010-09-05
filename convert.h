@@ -24,6 +24,7 @@ License along with this program. If not, see
 #include "doommap.h"
 #include "hexenmap.h"
 #include "zdoommap.h"
+#include "strifemap.h"
 #include "sharedmap.h"
 #include "udmf.h"
 
@@ -43,5 +44,9 @@ udmf::block convert(doom::thing,double xf = 1,double yf = 1,double zf = 1);
 //ZDoom -> UDMF
 udmf::block convert(zdoom::linedef);
 udmf::block convert(zdoom::thing,double xf = 1,double yf = 1,double zf = 1);
+
+//Strife -> UDMF
+udmf::block convert(strife::linedef);
+udmf::block convert(strife::thing,double xf = 1,double yf = 1,double zf = 1);
 
 #endif
